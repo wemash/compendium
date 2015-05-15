@@ -1,0 +1,1856 @@
+//
+// Glyphicons for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="glyphicon glyphicon-star"></span> Star</a>
+
+// Import the fonts
+
+
+// Catchall baseclass
+@mixin glyphicon {
+  font-family: 'Glyphicons Halflings';
+  -webkit-font-smoothing: antialiased;
+}
+
+// Padding
+$gi-padding: 0 3px;
+
+// Individual icons
+@mixin glyphicon-asterisk($pseudo) {
+    &:#{$pseudo} {
+        content: "\2a";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-plus($pseudo) {
+    &:#{$pseudo} {
+        content: "\2b";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-euro($pseudo) {
+    &:#{$pseudo} {
+        content: "\20ac";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-minus($pseudo) {
+    &:#{$pseudo} {
+        content: "\2212";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-cloud($pseudo) {
+    &:#{$pseudo} {
+        content: "\2601";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-envelope($pseudo) {
+    &:#{$pseudo} {
+        content: "\2709";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-pencil($pseudo) {
+    &:#{$pseudo} {
+        content: "\270f";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-glass($pseudo) {
+    &:#{$pseudo} {
+        content: "\e001";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-music($pseudo) {
+    &:#{$pseudo} {
+        content: "\e002";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-search($pseudo) {
+    &:#{$pseudo} {
+        content: "\e003";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-heart($pseudo) {
+    &:#{$pseudo} {
+        content: "\e005";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-star($pseudo) {
+    &:#{$pseudo} {
+        content: "\e006";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-star-empty($pseudo) {
+    &:#{$pseudo} {
+        content: "\e007";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-user($pseudo) {
+    &:#{$pseudo} {
+        content: "\e008";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-film($pseudo) {
+    &:#{$pseudo} {
+        content: "\e009";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-th-large($pseudo) {
+    &:#{$pseudo} {
+        content: "\e010";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-th($pseudo) {
+    &:#{$pseudo} {
+        content: "\e011";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-th-list($pseudo) {
+    &:#{$pseudo} {
+        content: "\e012";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-ok($pseudo) {
+    &:#{$pseudo} {
+        content: "\e013";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-remove($pseudo) {
+    &:#{$pseudo} {
+        content: "\e014";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-zoom-in($pseudo) {
+    &:#{$pseudo} {
+        content: "\e015";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-zoom-out($pseudo) {
+    &:#{$pseudo} {
+        content: "\e016";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-off($pseudo) {
+    &:#{$pseudo} {
+        content: "\e017";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-signal($pseudo) {
+    &:#{$pseudo} {
+        content: "\e018";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-cog($pseudo) {
+    &:#{$pseudo} {
+        content: "\e019";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-trash($pseudo) {
+    &:#{$pseudo} {
+        content: "\e020";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-home($pseudo) {
+    &:#{$pseudo} {
+        content: "\e021";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-file($pseudo) {
+    &:#{$pseudo} {
+        content: "\e022";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-time($pseudo) {
+    &:#{$pseudo} {
+        content: "\e023";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-road($pseudo) {
+    &:#{$pseudo} {
+        content: "\e024";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-download-alt($pseudo) {
+    &:#{$pseudo} {
+        content: "\e025";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-download($pseudo) {
+    &:#{$pseudo} {
+        content: "\e026";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-upload($pseudo) {
+    &:#{$pseudo} {
+        content: "\e027";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-inbox($pseudo) {
+    &:#{$pseudo} {
+        content: "\e028";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-play-circle($pseudo) {
+    &:#{$pseudo} {
+        content: "\e029";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-repeat($pseudo) {
+    &:#{$pseudo} {
+        content: "\e030";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-refresh($pseudo) {
+    &:#{$pseudo} {
+        content: "\e031";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-list-alt($pseudo) {
+    &:#{$pseudo} {
+        content: "\e032";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-lock($pseudo) {
+    &:#{$pseudo} {
+        content: "\e033";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-flag($pseudo) {
+    &:#{$pseudo} {
+        content: "\e034";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-headphones($pseudo) {
+    &:#{$pseudo} {
+        content: "\e035";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-volume-off($pseudo) {
+    &:#{$pseudo} {
+        content: "\e036";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-volume-down($pseudo) {
+    &:#{$pseudo} {
+        content: "\e037";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-volume-up($pseudo) {
+    &:#{$pseudo} {
+        content: "\e038";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-qrcode($pseudo) {
+    &:#{$pseudo} {
+        content: "\e039";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-barcode($pseudo) {
+    &:#{$pseudo} {
+        content: "\e040";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-tag($pseudo) {
+    &:#{$pseudo} {
+        content: "\e041";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-tags($pseudo) {
+    &:#{$pseudo} {
+        content: "\e042";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-book($pseudo) {
+    &:#{$pseudo} {
+        content: "\e043";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-bookmark($pseudo) {
+    &:#{$pseudo} {
+        content: "\e044";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-print($pseudo) {
+    &:#{$pseudo} {
+        content: "\e045";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-camera($pseudo) {
+    &:#{$pseudo} {
+        content: "\e046";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-font($pseudo) {
+    &:#{$pseudo} {
+        content: "\e047";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-bold($pseudo) {
+    &:#{$pseudo} {
+        content: "\e048";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-italic($pseudo) {
+    &:#{$pseudo} {
+        content: "\e049";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-text-height($pseudo) {
+    &:#{$pseudo} {
+        content: "\e050";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-text-width($pseudo) {
+    &:#{$pseudo} {
+        content: "\e051";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-align-left($pseudo) {
+    &:#{$pseudo} {
+        content: "\e052";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-align-center($pseudo) {
+    &:#{$pseudo} {
+        content: "\e053";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-align-right($pseudo) {
+    &:#{$pseudo} {
+        content: "\e054";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-align-justify($pseudo) {
+    &:#{$pseudo} {
+        content: "\e055";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-list($pseudo) {
+    &:#{$pseudo} {
+        content: "\e056";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-indent-left($pseudo) {
+    &:#{$pseudo} {
+        content: "\e057";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-indent-right($pseudo) {
+    &:#{$pseudo} {
+        content: "\e058";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-facetime-video($pseudo) {
+    &:#{$pseudo} {
+        content: "\e059";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-picture($pseudo) {
+    &:#{$pseudo} {
+        content: "\e060";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-map-marker($pseudo) {
+    &:#{$pseudo} {
+        content: "\e062";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-adjust($pseudo) {
+    &:#{$pseudo} {
+        content: "\e063";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-tint($pseudo) {
+    &:#{$pseudo} {
+        content: "\e064";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-edit($pseudo) {
+    &:#{$pseudo} {
+        content: "\e065";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-share($pseudo) {
+    &:#{$pseudo} {
+        content: "\e066";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-check($pseudo) {
+    &:#{$pseudo} {
+        content: "\e067";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-move($pseudo) {
+    &:#{$pseudo} {
+        content: "\e068";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-step-backward($pseudo) {
+    &:#{$pseudo} {
+        content: "\e069";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-fast-backward($pseudo) {
+    &:#{$pseudo} {
+        content: "\e070";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-backward($pseudo) {
+    &:#{$pseudo} {
+        content: "\e071";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-play($pseudo) {
+    &:#{$pseudo} {
+        content: "\e072";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-pause($pseudo) {
+    &:#{$pseudo} {
+        content: "\e073";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-stop($pseudo) {
+    &:#{$pseudo} {
+        content: "\e074";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-forward($pseudo) {
+    &:#{$pseudo} {
+        content: "\e075";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-fast-forward($pseudo) {
+    &:#{$pseudo} {
+        content: "\e076";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-step-forward($pseudo) {
+    &:#{$pseudo} {
+        content: "\e077";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-eject($pseudo) {
+    &:#{$pseudo} {
+        content: "\e078";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-chevron-left($pseudo) {
+    &:#{$pseudo} {
+        content: "\e079";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-chevron-right($pseudo) {
+    &:#{$pseudo} {
+        content: "\e080";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-plus-sign($pseudo) {
+    &:#{$pseudo} {
+        content: "\e081";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-minus-sign($pseudo) {
+    &:#{$pseudo} {
+        content: "\e082";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-remove-sign($pseudo) {
+    &:#{$pseudo} {
+        content: "\e083";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-ok-sign($pseudo) {
+    &:#{$pseudo} {
+        content: "\e084";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-question-sign($pseudo) {
+    &:#{$pseudo} {
+        content: "\e085";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-info-sign($pseudo) {
+    &:#{$pseudo} {
+        content: "\e086";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-screenshot($pseudo) {
+    &:#{$pseudo} {
+        content: "\e087";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-remove-circle($pseudo) {
+    &:#{$pseudo} {
+        content: "\e088";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-ok-circle($pseudo) {
+    &:#{$pseudo} {
+        content: "\e089";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-ban-circle($pseudo) {
+    &:#{$pseudo} {
+        content: "\e090";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-arrow-left($pseudo) {
+    &:#{$pseudo} {
+        content: "\e091";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-arrow-right($pseudo) {
+    &:#{$pseudo} {
+        content: "\e092";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-arrow-up($pseudo) {
+    &:#{$pseudo} {
+        content: "\e093";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-arrow-down($pseudo) {
+    &:#{$pseudo} {
+        content: "\e094";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-share-alt($pseudo) {
+    &:#{$pseudo} {
+        content: "\e095";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-resize-full($pseudo) {
+    &:#{$pseudo} {
+        content: "\e096";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-resize-small($pseudo) {
+    &:#{$pseudo} {
+        content: "\e097";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-exclamation-sign($pseudo) {
+    &:#{$pseudo} {
+        content: "\e101";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-gift($pseudo) {
+    &:#{$pseudo} {
+        content: "\e102";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-leaf($pseudo) {
+    &:#{$pseudo} {
+        content: "\e103";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-fire($pseudo) {
+    &:#{$pseudo} {
+        content: "\e104";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-eye-open($pseudo) {
+    &:#{$pseudo} {
+        content: "\e105";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-eye-close($pseudo) {
+    &:#{$pseudo} {
+        content: "\e106";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-warning-sign($pseudo) {
+    &:#{$pseudo} {
+        content: "\e107";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-plane($pseudo) {
+    &:#{$pseudo} {
+        content: "\e108";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-calendar($pseudo) {
+    &:#{$pseudo} {
+        content: "\e109";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-random($pseudo) {
+    &:#{$pseudo} {
+        content: "\e110";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-comment($pseudo) {
+    &:#{$pseudo} {
+        content: "\e111";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-magnet($pseudo) {
+    &:#{$pseudo} {
+        content: "\e112";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-chevron-up($pseudo) {
+    &:#{$pseudo} {
+        content: "\e113";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-chevron-down($pseudo) {
+    &:#{$pseudo} {
+        content: "\e114";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-retweet($pseudo) {
+    &:#{$pseudo} {
+        content: "\e115";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-shopping-cart($pseudo) {
+    &:#{$pseudo} {
+        content: "\e116";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-folder-close($pseudo) {
+    &:#{$pseudo} {
+        content: "\e117";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-folder-open($pseudo) {
+    &:#{$pseudo} {
+        content: "\e118";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-resize-vertical($pseudo) {
+    &:#{$pseudo} {
+        content: "\e119";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-resize-horizontal($pseudo) {
+    &:#{$pseudo} {
+        content: "\e120";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-hdd($pseudo) {
+    &:#{$pseudo} {
+        content: "\e121";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-bullhorn($pseudo) {
+    &:#{$pseudo} {
+        content: "\e122";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-bell($pseudo) {
+    &:#{$pseudo} {
+        content: "\e123";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-certificate($pseudo) {
+    &:#{$pseudo} {
+        content: "\e124";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-thumbs-up($pseudo) {
+    &:#{$pseudo} {
+        content: "\e125";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-thumbs-down($pseudo) {
+    &:#{$pseudo} {
+        content: "\e126";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-hand-right($pseudo) {
+    &:#{$pseudo} {
+        content: "\e127";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-hand-left($pseudo) {
+    &:#{$pseudo} {
+        content: "\e128";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-hand-up($pseudo) {
+    &:#{$pseudo} {
+        content: "\e129";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-hand-down($pseudo) {
+    &:#{$pseudo} {
+        content: "\e130";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-circle-arrow-right($pseudo) {
+    &:#{$pseudo} {
+        content: "\e131";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-circle-arrow-left($pseudo) {
+    &:#{$pseudo} {
+        content: "\e132";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-circle-arrow-up($pseudo) {
+    &:#{$pseudo} {
+        content: "\e133";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-circle-arrow-down($pseudo) {
+    &:#{$pseudo} {
+        content: "\e134";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-globe($pseudo) {
+    &:#{$pseudo} {
+        content: "\e135";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-wrench($pseudo) {
+    &:#{$pseudo} {
+        content: "\e136";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-tasks($pseudo) {
+    &:#{$pseudo} {
+        content: "\e137";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-filter($pseudo) {
+    &:#{$pseudo} {
+        content: "\e138";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-briefcase($pseudo) {
+    &:#{$pseudo} {
+        content: "\e139";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-fullscreen($pseudo) {
+    &:#{$pseudo} {
+        content: "\e140";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-dashboard($pseudo) {
+    &:#{$pseudo} {
+        content: "\e141";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-paperclip($pseudo) {
+    &:#{$pseudo} {
+        content: "\e142";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-heart-empty($pseudo) {
+    &:#{$pseudo} {
+        content: "\e143";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-link($pseudo) {
+    &:#{$pseudo} {
+        content: "\e144";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-phone($pseudo) {
+    &:#{$pseudo} {
+        content: "\e145";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-pushpin($pseudo) {
+    &:#{$pseudo} {
+        content: "\e146";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-usd($pseudo) {
+    &:#{$pseudo} {
+        content: "\e148";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-gbp($pseudo) {
+    &:#{$pseudo} {
+        content: "\e149";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sort($pseudo) {
+    &:#{$pseudo} {
+        content: "\e150";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sort-by-alphabet($pseudo) {
+    &:#{$pseudo} {
+        content: "\e151";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sort-by-alphabet-alt($pseudo) {
+    &:#{$pseudo} {
+        content: "\e152";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sort-by-order($pseudo) {
+    &:#{$pseudo} {
+        content: "\e153";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sort-by-order-alt($pseudo) {
+    &:#{$pseudo} {
+        content: "\e154";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sort-by-attributes($pseudo) {
+    &:#{$pseudo} {
+        content: "\e155";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sort-by-attributes-alt($pseudo) {
+    &:#{$pseudo} {
+        content: "\e156";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-unchecked($pseudo) {
+    &:#{$pseudo} {
+        content: "\e157";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-expand($pseudo) {
+    &:#{$pseudo} {
+        content: "\e158";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-collapse-down($pseudo) {
+    &:#{$pseudo} {
+        content: "\e159";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-collapse-up($pseudo) {
+    &:#{$pseudo} {
+        content: "\e160";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-log-in($pseudo) {
+    &:#{$pseudo} {
+        content: "\e161";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-flash($pseudo) {
+    &:#{$pseudo} {
+        content: "\e162";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-log-out($pseudo) {
+    &:#{$pseudo} {
+        content: "\e163";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-new-window($pseudo) {
+    &:#{$pseudo} {
+        content: "\e164";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-record($pseudo) {
+    &:#{$pseudo} {
+        content: "\e165";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-save($pseudo) {
+    &:#{$pseudo} {
+        content: "\e166";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-open($pseudo) {
+    &:#{$pseudo} {
+        content: "\e167";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-saved($pseudo) {
+    &:#{$pseudo} {
+        content: "\e168";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-import($pseudo) {
+    &:#{$pseudo} {
+        content: "\e169";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-export($pseudo) {
+    &:#{$pseudo} {
+        content: "\e170";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-send($pseudo) {
+    &:#{$pseudo} {
+        content: "\e171";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-floppy-disk($pseudo) {
+    &:#{$pseudo} {
+        content: "\e172";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-floppy-saved($pseudo) {
+    &:#{$pseudo} {
+        content: "\e173";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-floppy-remove($pseudo) {
+    &:#{$pseudo} {
+        content: "\e174";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-floppy-save($pseudo) {
+    &:#{$pseudo} {
+        content: "\e175";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-floppy-open($pseudo) {
+    &:#{$pseudo} {
+        content: "\e176";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-credit-card($pseudo) {
+    &:#{$pseudo} {
+        content: "\e177";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-transfer($pseudo) {
+    &:#{$pseudo} {
+        content: "\e178";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-cutlery($pseudo) {
+    &:#{$pseudo} {
+        content: "\e179";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-header($pseudo) {
+    &:#{$pseudo} {
+        content: "\e180";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-compressed($pseudo) {
+    &:#{$pseudo} {
+        content: "\e181";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-earphone($pseudo) {
+    &:#{$pseudo} {
+        content: "\e182";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-phone-alt($pseudo) {
+    &:#{$pseudo} {
+        content: "\e183";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-tower($pseudo) {
+    &:#{$pseudo} {
+        content: "\e184";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-stats($pseudo) {
+    &:#{$pseudo} {
+        content: "\e185";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sd-video($pseudo) {
+    &:#{$pseudo} {
+        content: "\e186";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-hd-video($pseudo) {
+    &:#{$pseudo} {
+        content: "\e187";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-subtitles($pseudo) {
+    &:#{$pseudo} {
+        content: "\e188";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sound-stereo($pseudo) {
+    &:#{$pseudo} {
+        content: "\e189";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sound-dolby($pseudo) {
+    &:#{$pseudo} {
+        content: "\e190";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sound-5-1($pseudo) {
+    &:#{$pseudo} {
+        content: "\e191";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sound-6-1($pseudo) {
+    &:#{$pseudo} {
+        content: "\e192";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sound-7-1($pseudo) {
+    &:#{$pseudo} {
+        content: "\e193";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-copyright-mark($pseudo) {
+    &:#{$pseudo} {
+        content: "\e194";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-registration-mark($pseudo) {
+    &:#{$pseudo} {
+        content: "\e195";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-cloud-download($pseudo) {
+    &:#{$pseudo} {
+        content: "\e197";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-cloud-upload($pseudo) {
+    &:#{$pseudo} {
+        content: "\e198";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-tree-conifer($pseudo) {
+    &:#{$pseudo} {
+        content: "\e199";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-tree-deciduous($pseudo) {
+    &:#{$pseudo} {
+        content: "\e200";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-cd($pseudo) {
+    &:#{$pseudo} {
+        content: "\e201";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-save-file($pseudo) {
+    &:#{$pseudo} {
+        content: "\e202";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-open-file($pseudo) {
+    &:#{$pseudo} {
+        content: "\e203";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-level-up($pseudo) {
+    &:#{$pseudo} {
+        content: "\e204";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-copy($pseudo) {
+    &:#{$pseudo} {
+        content: "\e205";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-paste($pseudo) {
+    &:#{$pseudo} {
+        content: "\e206";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-alert($pseudo) {
+    &:#{$pseudo} {
+        content: "\e209";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-equalizer($pseudo) {
+    &:#{$pseudo} {
+        content: "\e210";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-king($pseudo) {
+    &:#{$pseudo} {
+        content: "\e211";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-queen($pseudo) {
+    &:#{$pseudo} {
+        content: "\e212";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-pawn($pseudo) {
+    &:#{$pseudo} {
+        content: "\e213";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-bishop($pseudo) {
+    &:#{$pseudo} {
+        content: "\e214";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-knight($pseudo) {
+    &:#{$pseudo} {
+        content: "\e215";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-baby-formula($pseudo) {
+    &:#{$pseudo} {
+        content: "\e216";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-tent($pseudo) {
+    &:#{$pseudo} {
+        content: "\26fa";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-blackboard($pseudo) {
+    &:#{$pseudo} {
+        content: "\e218";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-bed($pseudo) {
+    &:#{$pseudo} {
+        content: "\e219";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-apple($pseudo) {
+    &:#{$pseudo} {
+        content: "\f8ff";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-erase($pseudo) {
+    &:#{$pseudo} {
+        content: "\e221";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-hourglass($pseudo) {
+    &:#{$pseudo} {
+        content: "\231b";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-lamp($pseudo) {
+    &:#{$pseudo} {
+        content: "\e223";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-duplicate($pseudo) {
+    &:#{$pseudo} {
+        content: "\e224";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-piggy-bank($pseudo) {
+    &:#{$pseudo} {
+        content: "\e225";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-scissors($pseudo) {
+    &:#{$pseudo} {
+        content: "\e226";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-bitcoin($pseudo) {
+    &:#{$pseudo} {
+        content: "\e227";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-btc($pseudo) {
+    &:#{$pseudo} {
+        content: "\e227";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-xbt($pseudo) {
+    &:#{$pseudo} {
+        content: "\e227";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-yen($pseudo) {
+    &:#{$pseudo} {
+        content: "\00a5";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-jpy($pseudo) {
+    &:#{$pseudo} {
+        content: "\00a5";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-ruble($pseudo) {
+    &:#{$pseudo} {
+        content: "\20bd";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-rub($pseudo) {
+    &:#{$pseudo} {
+        content: "\20bd";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-scale($pseudo) {
+    &:#{$pseudo} {
+        content: "\e230";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-ice-lolly($pseudo) {
+    &:#{$pseudo} {
+        content: "\e231";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-ice-lolly-tasted($pseudo) {
+    &:#{$pseudo} {
+        content: "\e232";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-education($pseudo) {
+    &:#{$pseudo} {
+        content: "\e233";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-option-horizontal($pseudo) {
+    &:#{$pseudo} {
+        content: "\e234";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-option-vertical($pseudo) {
+    &:#{$pseudo} {
+        content: "\e235";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-menu-hamburger($pseudo) {
+    &:#{$pseudo} {
+        content: "\e236";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-modal-window($pseudo) {
+    &:#{$pseudo} {
+        content: "\e237";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-oil($pseudo) {
+    &:#{$pseudo} {
+        content: "\e238";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-grain($pseudo) {
+    &:#{$pseudo} {
+        content: "\e239";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-sunglasses($pseudo) {
+    &:#{$pseudo} {
+        content: "\e240";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-text-size($pseudo) {
+    &:#{$pseudo} {
+        content: "\e241";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-text-color($pseudo) {
+    &:#{$pseudo} {
+        content: "\e242";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-text-background($pseudo) {
+    &:#{$pseudo} {
+        content: "\e243";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-object-align-top($pseudo) {
+    &:#{$pseudo} {
+        content: "\e244";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-object-align-bottom($pseudo) {
+    &:#{$pseudo} {
+        content: "\e245";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-object-align-horizontal($pseudo) {
+    &:#{$pseudo} {
+        content: "\e246";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-object-align-left($pseudo) {
+    &:#{$pseudo} {
+        content: "\e247";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-object-align-vertical($pseudo) {
+    &:#{$pseudo} {
+        content: "\e248";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-object-align-right($pseudo) {
+    &:#{$pseudo} {
+        content: "\e249";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-triangle-right($pseudo) {
+    &:#{$pseudo} {
+        content: "\e250";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-triangle-left($pseudo) {
+    &:#{$pseudo} {
+        content: "\e251";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-triangle-bottom($pseudo) {
+    &:#{$pseudo} {
+        content: "\e252";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-triangle-top($pseudo) {
+    &:#{$pseudo} {
+        content: "\e253";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-console($pseudo) {
+    &:#{$pseudo} {
+        content: "\e254";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-superscript($pseudo) {
+    &:#{$pseudo} {
+        content: "\e255";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-subscript($pseudo) {
+    &:#{$pseudo} {
+        content: "\e256";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-menu-left($pseudo) {
+    &:#{$pseudo} {
+        content: "\e257";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-menu-right($pseudo) {
+    &:#{$pseudo} {
+        content: "\e258";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-menu-down($pseudo) {
+    &:#{$pseudo} {
+        content: "\e259";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}
+@mixin glyphicon-menu-up($pseudo) {
+    &:#{$pseudo} {
+        content: "\e260";
+        padding: $gi-padding;
+        @include glyphicon();
+    }
+}

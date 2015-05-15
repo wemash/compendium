@@ -1,0 +1,24 @@
+/**
+ * Theme typography
+ */
+
+// Headers
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+
+// Paragraphs
+p, pre {}
+blockquote {}
+
+// Links
+a {
+  &:hover {}
+}
+
+// Lists
+ul {
+  li {}
+}

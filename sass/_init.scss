@@ -1,0 +1,167 @@
+//
+// Initialization partial
+//
+// To make it easier to use all variables and mixins in any Sass file in this
+// theme, each .scss file has a @import "init" declaration. And this _init.scss
+// file is in charge of importing all the other partials needed for the theme.
+//
+// This initialization partial is organized in this way:
+// - First we set any shared Sass variables.
+// - Next we import Compass plug-ins (Sass mixin libraries).
+// - Last we define our custom mixins for this theme.
+//
+
+
+// =============================================================================
+// Variables
+// =============================================================================
+
+//
+// Font faces, stacks and sizes.
+//
+
+// Compass' vertical_rhythm extension is a powerful tool to set up a vertical
+// rhythm for your entire page. You can see some of its mixins and functions in
+// use in the normalize.scss file.
+// @see http://compass-style.org/reference/compass/typography/vertical_rhythm/
+
+$base-font-size:   16px; // The font size set on the root html element.
+$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+$p-font-size: 14px;
+$p-line-height: 2em;
+
+$h1-font-size: 2    * $base-font-size;
+$h2-font-size: 1.5  * $base-font-size;
+$h3-font-size: 1.17 * $base-font-size;
+$h4-font-size: 1    * $base-font-size;
+$h5-font-size: 0.83 * $base-font-size;
+$h6-font-size: 0.67 * $base-font-size;
+
+// For symfony we should define which bundle we're in. This is a hack.
+$symfony-bundle-uri: '/bundles/the/';
+
+//
+// Colors, etc.
+//
+$color-dark-blue: #002f6c;
+$color-medium-blue: #3a8ab9;
+$color-light-blue: #428bca;
+$color-orange: #f4821f;
+$color-grey: #606060;
+$color-black: #333;
+$color-nav-highlight: rgba(33,150,243,1);
+$color-light-grey: rgba(0,0,0,0.4);
+$color-text-main: rgba(0,0,0,0.8);
+$color-text-screen: rgba(0,0,0,0.6);
+$color-border-light: rgba(0,0,0,0.3);
+$color-border-extra-light: rgba(0,0,0,0.1);
+
+// Let's import those custom fonts.
+@import "components/fonts";
+
+// First, let's create some font stacks.
+$times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
+$times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
+$georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
+
+$verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
+$tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
+$helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
+$arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+$archivo-narrow: "Archivo Narrow", Arial, Helvetica, sans-serif;
+
+// For an explanation of why "sans-serif" is at the end of this list, see
+// http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
+$courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+// Now create some variables for the font stacks we want to use on this site.
+$base-font-family: $arial; // The font family set on the html element.
+$font-body:        $arial;
+$font-monospace:   $courier;
+
+// Import the glyphicons from Bootstrap
+@import "components/glyphicons";
+
+// Import fontawesome icons
+@import "components/fontawesome";
+
+// Import custom icons
+@import "components/icons";
+
+
+// The amount lists, blockquotes and comments are indented.
+$indent-amount: 30px;
+
+// The height of the navigation container.
+$nav-height: 3em;
+
+// The main menu heigh
+$main-menu-height: 50px;
+
+// Tab styling.
+$tabs-container-bg: #fff;
+$tabs-border: #bbb;
+
+// Structure variables
+$viewport-increment: 1px; // customize to suite
+
+// The small viewports
+$size-small: 480px;
+$size-small-spacing: 15px;
+
+$size-mobile-menu: 767px;
+
+// The medium viewports
+$size-medium: 896px;
+$size-medium-spacing: 15px;
+
+// The large viewports
+$size-large: 897px;
+$size-large-spacing: 10px;
+$size-max: 1200px;
+
+$size-post-small: $size-small + $viewport-increment;
+$size-pre-medium: $size-medium - $viewport-increment;
+$size-pre-large: $size-large - $viewport-increment;
+
+// Where the menu breaks
+$size-menu-break: 922px;
+
+// Sizing constraints
+$min: min-width;
+$max: max-width;
+
+/* ==================
+ * Custom classes
+ * ==================*/
+.preparing {
+  display: none;
+}
+
+.img-rounded-dashed {
+  border: 2px dashed $color-border-extra-light;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+// =============================================================================
+// Partials to be shared with all .scss files.
+// =============================================================================
+
+// Add Compass' IE and vendor prefix support variables.
+@import "compass/support";
+// Better than Drupal's clearfix.
+@import "compass/utilities/general/clearfix";
+// See http://compass-style.org/help/tutorials/spriting/
+@import "compass/utilities/sprites";
+// Use one CSS3 mixin instead of multiple vendor prefixes.
+@import "compass/css3";
+// Helps set up a vertical rhythm.
+@import "compass/typography/vertical_rhythm";
+// Add the Zen Grids responsive layout mixins.
+@import "zen";
+
+// Now we add our custom helper mixins.
+@import "mixins";

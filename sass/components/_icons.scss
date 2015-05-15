@@ -1,0 +1,75 @@
+/**
+ * Custom icons for the project.
+ */
+
+// Catchall baseclass
+[class^="npf-icon-"], [class*=" npf-icon-"] {
+  font-family: 'NPF Icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Individual icons
+.npf-icon-dashboard:before {
+  content: "\e600";
+}
+
+.npf-icon-develop:before {
+  content: "\e601";
+}
+
+.npf-icon-discover:before {
+  content: "\e602";
+}
+
+.npf-icon-discuss:before {
+  content: "\e603";
+}
+
+.npf-icon-edit:before {
+  content: "\e604";
+}
+
+.npf-icon-mydata:before {
+  content: "\e605";
+}
+
+.npf-icon-pie-chart:before {
+  content: "\e606";
+}
+
+.npf-icon-publish:before {
+  content: "\e607";
+}
+
+.npf-icon-save:before {
+  content: "\e608";
+}
+
+.npf-icon-scatter-plot:before {
+  content: "\e609";
+}
+
+.npf-icon-share:before {
+  content: "\e60a";
+}
+
+.npf-icon-column-chart:before {
+  content: "\e992";
+}
+
+.npf-icon-line-chart:before {
+  content: "\e99b";
+}
+
+.npf-icon-bar-chart:before {
+  content: "\e99c";
+}

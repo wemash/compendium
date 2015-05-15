@@ -1,0 +1,81 @@
+/**
+ * @file
+ * Positioning for a responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+// We are going to create a fluid grid with 1, 3, or 5 columns and 20px gutters
+// between columns (applied as 10px of left/right padding on each column).
+$zen-column-count:  1;
+$zen-gutter-width:  20px;
+
+// If you need IE6/7 support for box-sizing: border-box (default), see _init.scss
+//$zen-box-sizing: content-box;
+
+// You can generate more efficient CSS if you manually apply the
+// zen-grid-item-base mixin to all grid items from within a single ruleset.
+$zen-auto-include-item-base: false;
+// $zen-auto-include-flow-item-base: false;
+
+// Flexboxes
+.flex {
+  display: flex;
+
+  .flex-even {
+    flex: 1 1 auto;
+  }
+}
+
+// Layouts with a one column and a tooltip
+.one-tooltip {
+  .col-xs-9 {
+    padding-right: 150px;
+  }
+}
+
+// Layouts with one large section and two smaller side-by-sides
+.one-two {
+  .discovery {
+    /*min-height: 500px;*/
+  }
+}
+
+// Define styles to specify when elements are displayed based on the defined
+// breakpoints in init.scss.
+.display-on-medium, .display-on-mobile-menu, .display-on-small {
+  display: none !important;
+}
+
+.display-on-large {
+  display: block !important;
+}
+
+@include at-query($max, $size-medium) {
+  .display-on-large, .display-on-mobile-menu, .display-on-small {
+    display: none !important;
+  }
+
+  .display-on-medium {
+    display: block !important;
+  }
+}
+
+@include at-query($max, $size-mobile-menu) {
+  .display-on-mobile-menu {
+    display: block !important;
+  }
+}
+
+@include at-query($max, $size-small) {
+  .display-on-medium, .display-on-large {
+    display: none !important;
+  }
+
+  .display-on-small {
+    display: block !important;
+  }
+}
